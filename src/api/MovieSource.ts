@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const getMovies = async (text: string) => {
-    const baseURL = "http://www.omdbapi.com/"
+    const baseURL = "https://www.omdbapi.com/"
     try {
         const {data, status} = await axios.get(baseURL, 
         {params: {s: text, i: 'tt3896198', apiKey: 'a3a847b3'}}
